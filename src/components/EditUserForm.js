@@ -68,8 +68,10 @@ function EditUserForm({ user, onUpdateUser, cancelEdit }) {
         />
       </td>
       <td>
-        <button onClick={handleEdit}>Save</button>
-        <button onClick={cancelEdit}>Cancel</button>
+        <div className="button-container">
+          <button onClick={handleEdit}>Save</button>
+          <button onClick={cancelEdit}>Cancel</button>
+        </div>
       </td>
     </tr>
   );
